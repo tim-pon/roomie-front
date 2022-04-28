@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/selector_home"
+        android:title="@string/botnav_item_label_home" />
+
+    <item
+        android:id="@+id/navigation_shopping"
+        android:icon="@drawable/selector_shopping"
+        android:title="@string/botnav_item_label_shopping" />
+
+    <item
+        android:id="@+id/navigation_finance"
+        android:icon="@drawable/selector_finance"
+        android:title="@string/botnav_item_label_finance" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/selector_settings"
+        android:title="@string/botnav_item_label_settings" />
+
+</menu>

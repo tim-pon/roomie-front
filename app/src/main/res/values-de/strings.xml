@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">Roomie</string>
+
+    <!-- Bottom Navigation -->
+    <string name="botnav_item_label_home">Home</string>
+    <string name="botnav_item_label_shopping">Einkaufen</string>
+    <string name="botnav_item_label_finance">Finanzen</string>
+    <string name="botnav_item_label_settings">Einstellungen</string>
+
+    <!-- Navigation Item -->
+    <string name="nav_item_home_label">@string/botnav_item_label_home</string>
+    <string name="nav_item_shopping_label">@string/botnav_item_label_shopping</string>
+    <string name="nav_item_finance_label">@string/botnav_item_label_finance</string>
+    <string name="nav_item_settings_label">@string/botnav_item_label_settings</string>
+
+    <!-- Settings Subpages -->
+    <string name="subpage_change_username_label">Benutzername</string>
+    <string name="subpage_change_password_label">Passwort</string>
+    <string name="subpage_flat_info_label">WG Info</string>
+
+    <!-- Join or create Flat Tabs -->
+    <string name="join_flat">WG beitreten</string>
+    <string name="create_flat">WG erstellen</string>
+    <string name="error_entry_code">Einladungscode muss 20 Zeichen haben</string>
+    <string name="snackbar_joined_flat">Du bist jetzt in der WG: </string>
+    <string name="snackbar_error">Etwas ist schiefgegangen</string>
+    <string name="btn_cancel">Abbrechen</string>
+
+    <!-- Home Tabs -->
+    <string name="tab_item_home_overview_label">Übersicht</string>
+    <string name="tab_item_home_news_label">Neuigkeiten</string>
+
+    <!-- Finance Tabs -->
+    <string name="tab_item_finance_overview_label">Ausgaben</string>
+    <string name="tab_item_finance_statistics_label">Statistik</string>
+    <string name="tab_item_finance_graph_label">Graphik</string>
+    <string name="tab_item_finance_archive_label">Archiv</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Passwort</string>
+    <string name="new_password">Setze dein neues Passwort:</string>
+    <string name="prompt_old_password">Altes Passwort</string>
+    <string name="prompt_new_password">Neues Passwort</string>
+    <string name="error_matching_password">Passwörter sind nicht gleich</string>
+    <string name="prompt_matching_password">Gleiches neues Passwort</string>
+    <string name="prompt_username">Benutzername</string>
+    <string name="error_username">Benutzername muss mehr als 2 Zeichen haben</string>
+    <string name="new_username">Setze deinen neuen Benutzername:</string>
+    <string name="action_sign_in">Anmelden</string>
+    <string name="action_sign_up">Registrieren</string>
+    <string name="invalid_username">Kein gültiger Nutzername</string>
+    <string name="invalid_email_address">"Bitte gebe eine gültige Mail Adresse an"</string>
+    <string name="invalid_password">Passwort muss mehr als 5 Zeichen haben</string>
+    <string name="login_failed">"Anmeldung fehlgeschlagen"</string>
+    <string name="login_unsuccessful_msg">Login fehlgeschlagen</string>
+    <string name="flatname_hint">WG-Name</string>
+    <string name="error_flatname">WG-Name muss mehr als 3 Zeichen haben</string>
+    <string name="entry_code_hint">Einladungscode für die WG</string>
+    <string name="leave_flat_btn">Verlasse diese WG</string>
+    <string name="incorrect_email_password">Falsche Email oder Passwort</string>
+    <string name="error_server_not_available">Server nicht verfügbar</string>
+    <string name="internet_connection">Keine Internetverbindung</string>
+    <string name="error_smt_wrong_html_code">Etwas ist schiefgelaufen: HTML Error %d"</string>
+    <string name="join_flat_or">ODER</string>
+    <string name="join_flat_qr">Scanne den QR-Code</string>
+
+    <string name="login_title">Anmelden</string>
+    <string name="registration_title">Registrieren</string>
+
+    <string name="logout">ABMELDEN</string>
+    <string name="logout_alert_dialog">Abmelden</string>
+    <string name="logout_check">Willst du dich wirklich abmelden und diese App verlassen?</string>
+    <string name="logout_yes">JA</string>
+    <string name="logout_no">NEIN</string>
+
+    <string name="leave_flat_title">Verlasse diese WG</string>
+    <string name="leave_flat_options">Erstelle eine neue WG oder tritt einer anderen WG bei</string>
+    <string name="leave_flat_check">Willst du dich wirklich diese Gruppe verlassen?</string>
+    <string name="leave_flat_yes">Ja</string>
+    <string name="leave_flat_no">Nein</string>
+
+    <!-- Strings related to taking pictures -->
+    <string name="new_picture">Neues Bild</string>
+    <string name="from_camera">Mit der Kamera</string>
+    <string name="take_photo">Neues Bild</string>
+    <string name="select_photo">Galerie</string>
+
+    <!-- Strings related to custom Snackbar -->
+    <string name="snackbar_close">Schließen</string>
+    <string name="snackbar_warning_message">Warnung: %1$s</string>
+    <string name="snackbar_error_message">Error: %1$s</string>
+    <string name="snackbar_success_message">Erfolgreich: %1$s</string>
+
+    <!-- Article categories -->
+    <string name="cat_fruit">Früchte</string>
+    <string name="cat_vegetable">Gemüse</string>
+    <string name="cat_drink">Getränke</string>
+    <string name="cat_snack">Snacks</string>
+    <string name="cat_meat">Fleisch</string>
+    <string name="cat_fish">Fisch</string>
+    <string name="cat_cheese">Käse</string>
+    <string name="cat_other">Weiteres</string>
+
+    <!-- Article units -->
+    <string name="unit_litre">Liter</string>
+    <string name="unit_gram">Gramm</string>
+    <string name="unit_milligram">Milligramm</string>
+    <string name="unit_millilitre">Milliliter</string>
+    <string name="unit_piece">Stück</string>
+    <string name="unit_kilo">Kilo</string>
+
+    <!-- Article fragment -->
+    <string name="btn_save">Speichern</string>
+    <string name="input_hint_article">Artikel</string>
+    <string name="input_hint_category">Kategorie</string>
+    <string name="input_hin_amount">Menge</string>
+    <string name="input_hint_unit">Einheit</string>
+    <string name="input_hint_description">Beschreibung</string>
+
+    <!-- Activity description -->
+    <string name="activity_add_flat_beginning">hat die WG</string>
+    <string name="activity_add_flat_end">erstellt</string>
+    <string name="activity_join_flat_beginning">ist der WG</string>
+    <string name="activity_join_flat_end">beigetreten</string>
+    <string name="activity_add_list_beginning">hat die Einkaufsliste</string>
+    <string name="activity_add_list_end">erstellt</string>
+    <string name="activity_add_article_beginning">hat den Artikel</string>
+    <string name="activity_add_article_end">hinzugefügt</string>
+    <string name="activity_add_transaction_beginning">hat die Ausgabe</string>
+    <string name="activity_add_transaction_end">erstellt</string>
+    <string name="activity_pay_transactions_beginning">möchte alle Ausgaben ausgleichen</string>
+
+    <string name="activity_time_format">dd.MM.yyyy - HH:mm</string>
+
+    <!-- User info -->
+    <string name="userinfo_flat_info">Willkommen in der WG</string>
+
+    <!-- Graph Fragment -->
+    <string name="graph_empty_text">Keine Ausgaben bisher!</string>
+    <string name="graph_legend">Ausgaben</string>
+
+
+    <!-- Strings related to Settings -->
+    <string-array name="settings_headline">
+        <item>Benutzername</item>
+        <item>Passwort</item>
+        <item>WG Info</item>
+    </string-array>
+
+    <string-array name="settings_description">
+        <item>Ändere deinen Benutzername</item>
+        <item>Ändere dein Passwort</item>
+        <item>Lade andere WG-Mitglieder ein beizutreten</item>
+    </string-array>
+
+
+    <!-- Default error handling -->
+    <string name="error_401">401: Du bist nicht autorisiert!</string>
+    <string name="error_403">403: Verboten!</string>
+    <string name="error_404">404: Nicht gefunden!</string>
+    <string name="error_405">405: Nicht erlaubt!</string>
+    <string name="error_500">500: Interner Server Error</string>
+    <string name="error_503">503: Service nicht verfügbar</string>
+    <string name="error_408">Verbindung zum Server fehlgeschlagen!</string>
+
+    <string name="title_activity_splash_screen">SplashScreenAktivität</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Erstes Fragment</string>
+    <string name="second_fragment_label">Zweites Fragment</string>
+    <string name="next">Nächstes</string>
+    <string name="previous">Vorheriges</string>
+    <string name="snackbar_undo">Undo</string>
+    <string name="error_unknown">Unknown Error!</string>
+
+    <!-- Default delete dialog -->
+    <string name="dialog_delete_title">%1$s löschen?</string>
+    <string name="dialog_delete_yes">Löschen</string>
+    <string name="dialog_delete_no">Abbrechen</string>
+    <!-- Transaction delete dialog -->
+    <string name="dialog_delete_transaction_title">Transaktion</string>
+    <string name="dialog_delete_transaction_message">Willst du die Transaktion wirlich entfernen?</string>
+    <!-- Article delete dialog -->
+    <string name="dialog_delete_shoppinglist_title">Einkaufsliste</string>
+    <string name="dialog_delete_shoppinglist_message">Eure Liste enthält noch offene Artikel. Diese werden ebenfalls entfernt.</string>
+    <string name="label_empty_heading">Hier ist noch nichts los</string>
+    <string name="label_empty_heading_shopping">Gehen wir Einkaufen!</string>
+    <string name="label_empty_shopping">Liste hinzufügen</string>
+    <string name="btn_empty_shopping">Füge eine Einkaufsliste hinzu</string>
+    <string name="label_empty_shopping_detail">Erstelle deinen ersten Artikel</string>
+    <string name="btn_empty_shopping_detail">Artikel hinzufügen</string>
+    <string name="label_empty_heading_transactions">Noch keine Ausgaben?</string>
+    <string name="label_empty_transactions">Erstelle deine erste Ausgabe!</string>
+    <string name="btn_empty_transactions">Ausgabe hinzufügen</string>
+
+
+    <!-- Finance strings -->
+    <string name="dialog_button_settleTransactions">Abrechnen</string>
+    <string name="balance_description">Aktuelle Bilanz</string>
+    <string name="dialog_settle_finances_title">Finanzen abrechnen</string>
+    <string name="dialog_settle_finance_message">Willst du wirklich alle Finanzen abrechnen?</string>
+    <string name="settle_yes">JA</string>
+    <string name="settle_no">NEIN</string>
+    <string name="transaction_description_hint">Beschreibung</string>
+    <string name="transaction_price_hint">Preis</string>
+    <string name="add_transaction_description_hint">Beschreibung</string>
+    <string name="empty_article_name">Gib eine Bezeichnung ein</string>
+    <string name="empty_shopping_name">Gib einen Namen ein</string>
+
+</resources>

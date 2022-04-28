@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_item_fruit"
+        android:title="@string/cat_fruit" />
+    <item android:id="@+id/menu_item_vegetable"
+        android:title="@string/cat_vegetable" />
+    <item android:id="@+id/menu_item_drinks"
+        android:title="@string/cat_drink" />
+    <item android:id="@+id/menu_item_snacks"
+        android:title="@string/cat_snack" />
+    <item android:id="@+id/menu_item_meat"
+        android:title="@string/cat_meat" />
+    <item android:id="@+id/menu_item_cheese"
+        android:title="@string/cat_cheese" />
+    <item android:id="@+id/menu_item_other"
+        android:title="@string/cat_other" />
+</menu>

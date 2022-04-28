@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.example.roomie.domain.model.Activity" />
+    </data>
+
+        <RelativeLayout
+            android:id="@+id/default_activity_button"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:background="@drawable/custom_ripple"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/img_activity_category"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="category"
+                android:src="@drawable/selector_shopping" />
+
+            <TextView
+                android:id="@+id/label_activity_item_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/activity_created_on"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="false"
+                android:layout_toStartOf="@+id/icon_next"
+                android:layout_toEndOf="@id/img_activity_category"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:ellipsize="end"
+                android:paddingStart="10dp"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textSize="16sp"
+                tools:text="Example of an occurred activity" />
+
+            <TextView
+                android:id="@+id/activity_created_on"
+                android:layout_width="fill_parent"
+                android:layout_height="19dip"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/img_activity_category"
+
+                android:layout_toStartOf="@+id/icon_next"
+                android:ellipsize="marquee"
+                android:paddingLeft="10dp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textSize="11sp"
+                tools:text="29.01.1998 - 8:00" />
+
+            <ImageView
+                android:id="@+id/icon_next"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_arrow_right" />
+
+        </RelativeLayout>
+
+</layout>

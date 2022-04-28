@@ -1,0 +1,4 @@
+{
+  "/flats/:flatId/shoppinglists": "/shoppinglists?flatId=:flatId&_embed=articles",
+  "/shoppinglists/:shoppingListId": "/shoppinglists/:shoppingListId?_embed=articles"
+}

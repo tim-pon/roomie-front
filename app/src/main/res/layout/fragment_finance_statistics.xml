@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.roomie.presentation.finance.statistics.StatisticsViewModel" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.finance.statistics.StatisticsFragment" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/settleTransactions"
+            android:clipToPadding="false"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_finance_statistics" />
+
+        <Button
+            android:id="@+id/settleTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/dialog_button_settleTransactions"
+            android:layout_alignParentBottom="true"
+            android:enabled="@{viewmodel.isEnabled()}"/>
+
+    </RelativeLayout>
+</layout>

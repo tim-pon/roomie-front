@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.roomie.presentation.home.HomeFragment"
+        android:label="@string/nav_item_home_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_activity_to_shoppingFragment"
+            app:destination="@id/navigation_shopping" />
+
+        <action
+            android:id="@+id/action_activity_to_financeFragment"
+            app:destination="@id/navigation_finance" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_shopping"
+        android:name="com.example.roomie.presentation.shopping.overview.ShoppingFragment"
+        android:label="@string/nav_item_shopping_label"
+        tools:layout="@layout/fragment_shopping" >
+        <action
+            android:id="@+id/action_navigation_shopping_to_shoppingListDetailFragment"
+            app:destination="@id/shoppingListDetailFragment"/>
+        <action
+            android:id="@+id/action_navigation_shopping_to_transactionDialog"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_finance"
+        android:name="com.example.roomie.presentation.finance.FinanceFragment"
+        android:label="@string/nav_item_finance_label"
+        tools:layout="@layout/fragment_finance">
+        <action
+            android:id="@+id/action_financeOverviewFragment_to_transactionDialog"
+            app:destination="@id/transactionFragment" />
+        <action
+            android:id="@+id/action_statisticsFragment_to_settlementDialog"
+            app:destination="@id/settleTransactions" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.roomie.presentation.settings.SettingsFragment"
+        android:label="@string/nav_item_settings_label"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/shoppingListDetailFragment"
+        android:name="com.example.roomie.presentation.shopping.list_detail.ShoppingListDetailFragment"
+        android:label="{shoppingListName}">
+
+        <argument
+            android:name="shoppingListId"
+            app:argType="integer" />
+        <argument
+            android:name="shoppingListName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_shoppingListDetailFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/articleFragment"
+        android:name="com.example.roomie.presentation.shopping.article_detail.ArticleFragment"
+        android:label="ArticleFragment" >
+        <argument
+            android:name="articleId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="shoppingListId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_articleFragment_to_shoppingListDetailFragment"
+            app:destination="@id/shoppingListDetailFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.roomie.presentation.authentication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.roomie.presentation.authentication.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_registration"/>
+    <fragment
+        android:id="@+id/flatFragment"
+        android:name="com.example.roomie.presentation.flat.FlatFragment"
+        android:label="fragment_flat"
+        tools:layout="@layout/fragment_flat" />
+    <fragment
+        android:id="@+id/settingUsernameFragment"
+        android:name="com.example.roomie.presentation.settings.SettingUsernameFragment"
+        android:label="fragment_setting_username"
+        tools:layout="@layout/fragment_setting_username">
+        <action
+            android:id="@+id/action_settingUsername_to_settingsFragment"
+            app:destination="@+id/navigation_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFlatInfoFragment"
+        android:name="com.example.roomie.presentation.settings.SettingFlatInfoFragment"
+        android:label="SettingFlatInfoFragment" />
+    <fragment
+        android:id="@+id/settingPasswordFragment"
+        android:name="com.example.roomie.presentation.settings.SettingPasswordFragment"
+        android:label="SettingPasswordFragment">
+        <action
+            android:id="@+id/action_settingPassword_to_settingsFragment"
+            app:destination="@+id/navigation_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/financeOverviewFragment"
+        android:name="com.example.roomie.presentation.finance.overview.OverviewFragment"
+        android:label="OverviewFragment">
+        <action
+            android:id="@+id/action_financeOverviewFragment_to_transactionDialog"
+            app:destination="@id/transactionFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/transactionFragment"
+        android:name="com.example.roomie.presentation.finance.overview.DialogFragment"
+        android:label="TransactionFragment">
+        <argument
+            android:name="flatId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="transactionId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="transactionName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.roomie.presentation.finance.statistics.StatisticsFragment"
+        android:label="fragment_finance_statistics"
+        tools:layout="@layout/fragment_finance_statistics">
+        <action
+            android:id="@+id/action_statisticsFragment_to_settlementDialog"
+            app:destination="@id/settleTransactions" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/settleTransactions"
+        android:name="com.example.roomie.presentation.finance.statistics.DialogSettlementFragment"
+        android:label="SettlementFragment">
+    </dialog>
+
+
+</navigation>

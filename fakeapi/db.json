@@ -1,0 +1,305 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "shoppingListId": 1,
+      "name": "Bananen",
+      "category": "Obst",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": true
+    },
+    {
+      "id": 2,
+      "shoppingListId": 1,
+      "name": "Bier",
+      "category": "Alkohol",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": false
+    },
+    {
+      "id": 3,
+      "shoppingListId": 1,
+      "name": "Brot",
+      "category": "Backwaren",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": false
+    },
+    {
+      "id": 4,
+      "shoppingListId": 1,
+      "name": "Karotten",
+      "category": "Gemüse",
+      "amount": 500,
+      "unit": "Gramm",
+      "bought": false
+    },
+    {
+      "id": 5,
+      "shoppingListId": 1,
+      "name": "Mais",
+      "category": "Gemüse",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": false
+    },
+    {
+      "id": 6,
+      "shoppingListId": 1,
+      "name": "Wraps",
+      "category": "Backwaren",
+      "amount": 2,
+      "unit": "Stk",
+      "bought": false
+    },
+    {
+      "id": 7,
+      "shoppingListId": 2,
+      "name": "Pfeffi",
+      "category": "Alkohol",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": true
+    },
+    {
+      "id": 8,
+      "shoppingListId": 2,
+      "name": "Bier",
+      "category": "Alkohol",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": false
+    },
+    {
+      "id": 9,
+      "shoppingListId": 2,
+      "name": "Vodka",
+      "category": "Alkohol",
+      "amount": 1,
+      "unit": "Stk",
+      "bought": false
+    },
+    {
+      "id": 100,
+      "shoppingListId": 1,
+      "name": "TESTARTIKEL",
+      "category": "TESTING",
+      "amount": 1,
+      "unit": "Lütten",
+      "bought": false
+    }
+  ],
+  "shoppingLists": [
+    {
+      "id": 1,
+      "flatId": 1,
+      "name": "Wöchentlicher Einkauf",
+      "description": "Lorem Ipsum"
+    },
+    {
+      "id": 2,
+      "flatId": 1,
+      "name": "WG Party",
+      "description": "Vodka und Bier"
+    },
+    {
+      "id": 3,
+      "flatId": 2,
+      "name": "Baumarkt",
+      "description": "Heimwerker!",
+      "articles": [
+        {
+          "id": 1,
+          "shoppingListId": 3,
+          "name": "Bananen",
+          "category": "Obst",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 2,
+          "shoppingListId": 3,
+          "name": "Bier",
+          "category": "Alkohol",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 3,
+          "shoppingListId": 3,
+          "name": "Brot",
+          "category": "Backwaren",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "flatId": 2,
+      "name": "Black Friday",
+      "description": "Stonks",
+      "articles": [
+        {
+          "id": 1,
+          "shoppingListId": 4,
+          "name": "Bananen",
+          "category": "Obst",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 2,
+          "shoppingListId": 4,
+          "name": "Bier",
+          "category": "Alkohol",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 3,
+          "shoppingListId": 4,
+          "name": "Brot",
+          "category": "Backwaren",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "flatId": 2,
+      "name": "Christmas",
+      "description": "Hoe Hoe Hoe",
+      "articles": [
+        {
+          "id": 1,
+          "shoppingListId": 5,
+          "name": "Bananen",
+          "category": "Obst",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 2,
+          "shoppingListId": 5,
+          "name": "Bier",
+          "category": "Alkohol",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 3,
+          "shoppingListId": 5,
+          "name": "Brot",
+          "category": "Backwaren",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "flatId": 2,
+      "name": "Anderes",
+      "description": "Stuff",
+      "articles": [
+        {
+          "id": 1,
+          "shoppingListId": 6,
+          "name": "Bananen",
+          "category": "Obst",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 2,
+          "shoppingListId": 6,
+          "name": "Bier",
+          "category": "Alkohol",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 3,
+          "shoppingListId": 6,
+          "name": "Brot",
+          "category": "Backwaren",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "flatId": 2,
+      "name": "Test",
+      "description": "Test",
+      "articles": [
+        {
+          "id": 1,
+          "shoppingListId": 7,
+          "name": "Bananen",
+          "category": "Obst",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 2,
+          "shoppingListId": 7,
+          "name": "Bier",
+          "category": "Alkohol",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        },
+        {
+          "id": 3,
+          "shoppingListId": 7,
+          "name": "Brot",
+          "category": "Backwaren",
+          "amount": 1,
+          "unit": "Stk",
+          "bought": false
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "first post",
+      "author": "adrian schmidt",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

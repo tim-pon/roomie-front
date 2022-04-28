@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">Roomie</string>
+
+    <!-- Bottom Navigation -->
+    <string name="botnav_item_label_home">Home</string>
+    <string name="botnav_item_label_shopping">Shopping</string>
+    <string name="botnav_item_label_finance">Finance</string>
+    <string name="botnav_item_label_settings">Settings</string>
+
+    <!-- Navigation Item -->
+    <string name="nav_item_home_label">@string/botnav_item_label_home</string>
+    <string name="nav_item_shopping_label">@string/botnav_item_label_shopping</string>
+    <string name="nav_item_finance_label">@string/botnav_item_label_finance</string>
+    <string name="nav_item_settings_label">@string/botnav_item_label_settings</string>
+
+    <!-- Settings Subpages -->
+    <string name="subpage_change_username_label">Username</string>
+    <string name="subpage_change_password_label">Password</string>
+    <string name="subpage_flat_info_label">Flat Info</string>
+
+    <!-- Join or create Flat Tabs -->
+    <string name="join_flat">Join Flat</string>
+    <string name="create_flat">Create Flat</string>
+    <string name="error_entry_code">Entry code must have 20 characters</string>
+    <string name="snackbar_joined_flat">You are now in Flat: </string>
+    <string name="snackbar_error">Something went wrong</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Home Tabs -->
+    <string name="tab_item_home_overview_label">Overview</string>
+    <string name="tab_item_home_news_label">News</string>
+
+    <!-- Finance Tabs -->
+    <string name="tab_item_finance_overview_label">Expenses</string>
+    <string name="tab_item_finance_statistics_label">Stats</string>
+    <string name="tab_item_finance_graph_label">Graph</string>
+    <string name="tab_item_finance_archive_label">Archive</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="new_password">Set your new password:</string>
+    <string name="prompt_old_password">Old password</string>
+    <string name="prompt_new_password">New password</string>
+    <string name="error_matching_password">Passwords are not the same</string>
+    <string name="prompt_matching_password">Matching new password</string>
+    <string name="prompt_username">Username</string>
+    <string name="error_username">Username must have more than 2 characters</string>
+    <string name="new_username">Set your new username:</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_email_address">Please enter a valid mail address</string>
+    <string name="invalid_password">Password must have more than 5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="login_unsuccessful_msg">Login unsuccessful</string>
+    <string name="flatname_hint">Flatname</string>
+    <string name="error_flatname">Flatname must have more than 3 characters</string>
+    <string name="entry_code_hint">Entry Code for the Flat</string>
+    <string name="leave_flat_btn">Leave This Flat</string>
+    <string name="incorrect_email_password">Incorrect email or password</string>
+    <string name="error_server_not_available">Server not available</string>
+    <string name="internet_connection">no internet connection</string>
+    <string name="error_smt_wrong_html_code">"Something went wrong: HTML Error %d"</string>
+    <string name="join_flat_or">OR</string>
+    <string name="join_flat_qr">Scan QR-Code</string>
+
+    <string name="login_title">Login</string>
+    <string name="registration_title">Registration</string>
+
+    <string name="logout">LOGOUT</string>
+    <string name="logout_alert_dialog">Logout</string>
+    <string name="logout_check">Do you really want to logout and leave this app?</string>
+    <string name="logout_yes">YES</string>
+    <string name="logout_no">NO</string>
+
+    <string name="leave_flat_title">Leave this flat</string>
+    <string name="leave_flat_options">Join or create other flat</string>
+    <string name="leave_flat_check">Do you really want to leave this flat?</string>
+    <string name="leave_flat_yes">YES</string>
+    <string name="leave_flat_no">NO</string>
+
+    <!-- Strings related to taking pictures -->
+    <string name="new_picture">New Picture</string>
+    <string name="from_camera">From the Camera</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="select_photo">Select Photo</string>
+
+    <!-- Strings related to custom Snackbar -->
+    <string name="snackbar_close">Close</string>
+    <string name="snackbar_warning_message">Warning: %1$s</string>
+    <string name="snackbar_error_message">Error: %1$s</string>
+    <string name="snackbar_success_message">Success: %1$s</string>
+
+    <!-- Strings related to Settings -->
+    <string-array name="settings_headline">
+        <item>Username</item>
+        <item>Password</item>
+        <item>Flat Info</item>
+    </string-array>
+
+    <string-array name="settings_description">
+        <item>Change your username</item>
+        <item>Change your password</item>
+        <item>Invite other flat mates to join</item>
+    </string-array>
+
+    <!-- Article categories -->
+    <string name="cat_fruit">Fruit</string>
+    <string name="cat_vegetable">Vegetable</string>
+    <string name="cat_drink">Drink</string>
+    <string name="cat_snack">Snack</string>
+    <string name="cat_meat">Meat</string>
+    <string name="cat_fish">Fish</string>
+    <string name="cat_cheese">Cheese</string>
+    <string name="cat_other">Other</string>
+
+    <!-- Article units -->
+    <string name="unit_litre">Litre</string>
+    <string name="unit_gram">Gram</string>
+    <string name="unit_milligram">Milligram</string>
+    <string name="unit_millilitre">Millilitre</string>
+    <string name="unit_piece">Piece</string>
+    <string name="unit_kilo">Kilo</string>
+
+    <!-- Article fragment -->
+    <string name="btn_save">Save</string>
+    <string name="input_hint_article">Article</string>
+    <string name="input_hint_category">Category</string>
+    <string name="input_hin_amount">Amount</string>
+    <string name="input_hint_unit">Unit</string>
+    <string name="input_hint_description">Description</string>
+
+
+    <!-- Activity description -->
+    <string name="activity_add_flat_beginning">has created the flat</string>
+    <string name="activity_add_flat_end" />
+    <string name="activity_join_flat_beginning">has joined the flat</string>
+    <string name="activity_join_flat_end" />
+    <string name="activity_add_list_beginning">has created the shoppinglist</string>
+    <string name="activity_add_list_end" />
+    <string name="activity_add_article_beginning">has added the article</string>
+    <string name="activity_add_article_end" />
+    <string name="activity_add_transaction_beginning">has created the transaction</string>
+    <string name="activity_add_transaction_end" />
+    <string name="activity_pay_transactions_beginning">wants to balance all payments</string>
+
+    <string name="activity_time_format">MM/dd/yyyy - HH:mm</string>
+
+    <!-- User info -->
+    <string name="userinfo_flat_info">Welcome to the Flat</string>
+
+    <!-- Graph Fragment -->
+    <string name="graph_empty_text">No expenses yet!</string>
+    <string name="graph_legend">expenses</string>
+
+    <!-- Default error handling -->
+    <string name="error_401">401: You are not authorized!</string>
+    <string name="error_403">403: Forbidden!</string>
+    <string name="error_404">404: Not found!</string>
+    <string name="error_405">405: Method not allowed!</string>
+    <string name="error_500">500: Internal server error!</string>
+    <string name="error_503">503: Service unavailable!</string>
+    <string name="error_408">Couldn\'t connect to server!</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="snackbar_undo">Undo</string>
+    <string name="error_unknown">Unknown Error!</string>
+
+    <!-- Finance formatting -->
+    <string name="format_transaction_price" translatable="false">-%.2f€</string>
+    <string name="format_euro_price" translatable="false">%.2f\u20ac</string>
+
+    <!-- Finance strings -->
+    <string name="dialog_button_settleTransactions">Settle</string>
+    <string name="balance_description">Current balance</string>
+    <string name="dialog_settle_finances_title">Settle finances</string>
+    <string name="dialog_settle_finance_message">Do you really want to settle all finances?</string>
+    <string name="settle_yes">YES</string>
+    <string name="settle_no">NO</string>
+    <string name="transaction_description_hint">Description</string>
+    <string name="transaction_price_hint">Price</string>
+
+    <!-- Default delete dialog -->
+    <string name="dialog_delete_title" translatable="false">Remove %1$s?</string>
+    <string name="dialog_delete_yes">Remove</string>
+    <string name="dialog_delete_no">Cancel</string>
+    <!-- Shopping delete dialog -->
+    <string name="dialog_delete_shoppinglist_title">shoppinglist</string>
+    <string name="dialog_delete_shoppinglist_message">Your list contains open articles. These will also be deleted.</string>
+    <!-- Transaction delete dialog -->
+    <string name="dialog_delete_transaction_title">transaction</string>
+    <string name="dialog_delete_transaction_message">Do you really want to remove this transaction?</string>
+    <string name="label_empty_heading">Nothing in here</string>
+    <string name="label_empty_heading_shopping">Let\'s go to the Mall!</string>
+    <string name="label_empty_shopping">Create your first shoppinglist!</string>
+    <string name="btn_empty_shopping">Add Shoppinglist</string>
+    <string name="label_empty_shopping_detail">Create your first article</string>
+    <string name="btn_empty_shopping_detail">Add Item</string>
+    <string name="label_empty_heading_transactions">Keep track of your budget</string>
+    <string name="label_empty_transactions">Create your first expense!</string>
+    <string name="btn_empty_transactions">Add Expense</string>
+    <string name="add_transaction_description_hint">Description</string>
+    <string name="empty_article_name">Please enter a description</string>
+    <string name="empty_shopping_name">Please enter a description</string>
+
+</resources>

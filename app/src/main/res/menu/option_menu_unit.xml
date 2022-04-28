@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_item_kilo"
+        android:title="@string/unit_kilo" />
+    <item android:id="@+id/menu_item_litre"
+        android:title="@string/unit_litre" />
+    <item android:id="@+id/menu_item_gramm"
+        android:title="@string/unit_gram" />
+    <item android:id="@+id/menu_item_milligramm"
+        android:title="@string/unit_milligram" />
+    <item android:id="@+id/menu_item_millilitre"
+        android:title="@string/unit_millilitre" />
+    <item android:id="@+id/menu_item_piece"
+        android:title="@string/unit_piece" />
+</menu>

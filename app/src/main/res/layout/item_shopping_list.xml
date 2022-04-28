@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="4dp">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="shoppingList"
+            type="com.example.roomie.domain.model.ShoppingList" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{clickListener}"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingEnd="0dp"
+
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/label_shopping_list_item_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@{shoppingList.name}"
+                android:textSize="24sp"
+
+                tools:text="Banana" />
+
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/btn_more"
+                style="?android:attr/actionButtonStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="10dp"
+
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_below="@id/label_shopping_list_item_heading" >
+
+                <ProgressBar
+                    android:id="@+id/bar_items"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="@{shoppingList.totalItems}"
+                    android:progress="@{shoppingList.openArticles()}"
+                    tools:max="20"
+                    tools:progress="5"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="4dp"
+                    android:textSize="20sp"
+                    android:layout_gravity="end|center_vertical"
+                    android:gravity="end"
+                    android:text="@{shoppingList.openArticles() + `/` + shoppingList.totalItems}"
+                    tools:text="5/20"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
